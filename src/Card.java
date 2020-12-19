@@ -8,12 +8,4 @@ public class Card {
 
     public int getValue() { return this.value; }
 
-    public boolean isGreater(Card card) {
-        if (this.value == MIN_VALUE && card.getValue() == MAX_VALUE)
-            return true;
-        else if (this.value == MAX_VALUE && card.getValue() == MIN_VALUE)
-            return false;
-        return this.value > card.getValue();
-    }
-
 }
